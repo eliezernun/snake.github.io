@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.google.com https://www.google-analytics.com; object-src 'none';">
-    
-      <!-- Seu código de anúncio do Google AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-      google_ad_client: "ca-pub-1386286787307440",
-      enable_page_level_ads: true
-    });
-  </script>
-  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Snake Game</title>
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://www.google.com https://www.google-analytics.com; object-src 'none';">
+
+    <!-- Google AdSense Script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-1386286787307440",
+        enable_page_level_ads: true
+      });
+    </script>
+
+    <!-- Styles -->
     <style>
         body {
             display: flex;
@@ -32,6 +35,7 @@
 <body>
     <canvas id="gameCanvas" width="800" height="800"></canvas>
 
+    <!-- Game Script -->
     <script src="snake.js"></script>
 </body>
 </html>
